@@ -1,6 +1,7 @@
 /* Variables */
 :root {
-    --mainColor: #10cab7;
+        /* The Color */
+    --mainColor: black;
 }
 /* Start Global Rules */
 * {
@@ -204,6 +205,7 @@ body {
 
 .features {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -212,7 +214,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 30px;
-
 }
 
 
@@ -221,6 +222,13 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+
+.features .container .feat:last-child {
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .features .container .feat i {
@@ -232,13 +240,15 @@ body {
     margin: 0px;
     margin-top: 25px;
     margin-bottom: 25px;
+    font-weight: 800;
 }
 
 .features .container .feat p {
     line-height: 1.7;
     width: 300px;
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #777;
 }
 
 /* Small */
@@ -268,7 +278,7 @@ body {
         grid-area: 1 / 3 / 1 / span 2 ;
     }
     .features .container .feat:last-child {
-        grid-area: 2/ 1 / 2 / span2;
+        grid-area: 2 / 2 / 2 / span 2;
     }
 
 }
@@ -286,10 +296,6 @@ body {
         width: 300px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .features .container .feat:nth-child(2) {
-        box-shadow:0px 4px 4px 0px rgba(131, 131, 131, 0.904);
     }
 }
 
